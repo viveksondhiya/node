@@ -18,5 +18,37 @@
 
 //const color=require('colors')
 //console.log("hello".red)
-console.warn("hello programmer")
-console.log("hello coder")
+//console.warn("hello programmer")
+//console.log("hello coder")
+
+const fs=require('fs')
+const path=require('path')
+const dirpath=path.join(__dirname,'files');
+
+//fs.writeFileSync("main.txt","this is new file");
+for(i=0;i<5;i++){
+  fs.writeFileSync(dirpath+"/main"+i+".txt","this is new file"+" "+i);
+}
+fs.readdir(dirpath,(err,files)=>{
+files.forEach((item)=>{
+//console.log(item);
+})
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
