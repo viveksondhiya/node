@@ -16,6 +16,7 @@
 //    res.end();
 //}).listen(8000);
 
-const color=require('colors')
-console.log("hello".red)
-console.log("hello programmer")
+//const color=require('colors')
+//console.log("hello".red)
+console.warn("hello programmer")
+console.log("hello coder")
